@@ -1,2 +1,1 @@
-# A clone of AirBnB 
-
+# A clone of AirBnB
