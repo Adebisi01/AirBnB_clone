@@ -14,7 +14,11 @@ class BaseModel:
     def save(self):
         self.updated_at = datetime.now()
     def to_dict(self):
-        self.__class__ = self.__class__.__name__
+        self.__class__ = self.__class__
         self.created_at = self.created_at.isoformat('T')
         self.updated_at = self.updated_at.isoformat('T')
         return self.__dict__
+        
+if __name__ == __main__:
+    BaseModel()
+    
